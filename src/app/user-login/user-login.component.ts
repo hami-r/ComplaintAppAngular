@@ -21,8 +21,12 @@ export class UserLoginComponent {
     
     this.api.verifyUser(data).subscribe(
       (response:any) => {
+        console.log(response)
         if (response.status == "success") {
-          // this.route.navigate(['/'])
+          let userId:any = response.userId
+          console.log(userId);
+          localStorage.setItem("userInfo",userId)
+          this.route.navigate(['/userprofile'])
         } else {
           alert("Invalid credentials")
           }

@@ -15,4 +15,8 @@ export class ApiService {
   verifyUser = (sendData:any) => {
     return this.http.post("http://localhost:8080/userverify",sendData)
   }
+
+  viewProfile = (sendData:any) => {
+    return this.http.post("http://localhost:8080/viewprofile",sendData)
+  }
 }
