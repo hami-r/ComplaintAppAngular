@@ -7,6 +7,7 @@ import { HomeNavbarComponent } from './home-navbar/home-navbar.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserRegComponent } from './user-reg/user-reg.component';
 
@@ -14,6 +15,14 @@ let myRoutes:Routes = [
   {
     path:"",
     component:AdminLoginComponent
+  },
+  {
+    path:"userlogin",
+    component:UserLoginComponent
+  },
+  {
+    path:"userreg",
+    component:UserRegComponent
   }
 ]
 
@@ -29,7 +38,8 @@ let myRoutes:Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoutes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
