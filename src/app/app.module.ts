@@ -15,6 +15,8 @@ import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { AddComplaintComponent } from './add-complaint/add-complaint.component';
+import { ViewAllComplaintsComponent } from './view-all-complaints/view-all-complaints.component';
+import { ViewUserComplaintsComponent } from './view-user-complaints/view-user-complaints.component';
 
 let myRoutes:Routes = [
   {
@@ -40,6 +42,14 @@ let myRoutes:Routes = [
   {
     path:"addcomplaint",
     component:AddComplaintComponent
+  },
+  {
+    path:"viewallcomplaints",
+    component:ViewAllComplaintsComponent
+  },
+  {
+    path:"viewusercomplaints",
+    component:ViewUserComplaintsComponent
   }
 ]
 
@@ -54,7 +64,9 @@ let myRoutes:Routes = [
     UserNavbarComponent,
     AdminDashboardComponent,
     AdminNavbarComponent,
-    AddComplaintComponent
+    AddComplaintComponent,
+    ViewAllComplaintsComponent,
+    ViewUserComplaintsComponent
   ],
   imports: [
     BrowserModule,
