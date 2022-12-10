@@ -1,0 +1,19 @@
+<app-user-navbar></app-user-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-2 m-2">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center mb-5">
+                    <h4>Add Complaint</h4>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Complaint</label>
+                    <textarea class="form-control" name="complaint" [(ngModel)]="complaint" id="" cols="30" rows="3"></textarea>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="readValues()" class="btn btn-danger">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
