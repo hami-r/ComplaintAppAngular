@@ -19,4 +19,8 @@ export class ApiService {
   viewProfile = (sendData:any) => {
     return this.http.post("http://localhost:8080/viewprofile",sendData)
   }
+
+  addComplaint = (sendData:any) => {
+    return this.http.post("http://localhost:8080/addcomplaint",sendData)
+  }
 }

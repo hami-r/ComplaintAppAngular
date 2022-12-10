@@ -14,6 +14,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { AddComplaintComponent } from './add-complaint/add-complaint.component';
 
 let myRoutes:Routes = [
   {
@@ -35,6 +36,10 @@ let myRoutes:Routes = [
   {
     path:"admindashboard",
     component:AdminDashboardComponent
+  },
+  {
+    path:"addcomplaint",
+    component:AddComplaintComponent
   }
 ]
 
@@ -48,7 +53,8 @@ let myRoutes:Routes = [
     UserProfileComponent,
     UserNavbarComponent,
     AdminDashboardComponent,
-    AdminNavbarComponent
+    AdminNavbarComponent,
+    AddComplaintComponent
   ],
   imports: [
     BrowserModule,
